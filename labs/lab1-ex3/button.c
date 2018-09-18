@@ -1,0 +1,14 @@
+#include <avr/io.h>
+#include "button.h"
+
+
+/** Return non-zero if button pressed.  */
+int button_pressed_p (void) {
+    return (PIND &= BIT(7));
+}
+
+
+/** Initialise button1.  */
+void button_init (void) {
+    DDRD &= ~BIT(7);
+}

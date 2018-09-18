@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "system.h": "c",
+        "button.h": "c",
+        "string": "c",
+        "pio.h": "c",
+        "led.h": "c",
+        "io.h": "c",
+        "avrtest.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": false
+}
