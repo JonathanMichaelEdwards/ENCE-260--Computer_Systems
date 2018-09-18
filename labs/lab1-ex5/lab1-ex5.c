@@ -51,7 +51,7 @@ int main (void)
     ledmat_pixel_set(row, col);
     
     while (1) {
-        continue;
+        
     }
 
     return 0; 
