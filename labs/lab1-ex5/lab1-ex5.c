@@ -15,14 +15,10 @@ static pio_t ledmat_cols[] =
 };
 
 
-/** Turn single LED within matrix on or off.
-    @param col LED column number
-    @param row LED row number
-    @param state LED state  */
-static void ledmat_pixel_set(int col, int row) 
+static void ledmat_pixel_set() 
 {
-    pio_output_toggle(ledmat_rows[row]);
-    pio_output_toggle(ledmat_cols[col]);
+    pio_output_toggle(LEDMAT_ROW1_PIO);
+    pio_output_toggle(LEDMAT_COL5_PIO);
 }
 
 
