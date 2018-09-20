@@ -14,7 +14,7 @@ static pio_t ledmat_cols[] =
     LEDMAT_COL4_PIO, LEDMAT_COL5_PIO
 };
 
-
+/* Toggle Led to be on.   */
 static void ledmat_pixel_set() 
 {
     pio_output_toggle(LEDMAT_ROW1_PIO);
