@@ -7,7 +7,7 @@
 #define LED_BIT 2
 #define BUTTON_BIT 7
 
-
+/* Adding Macros.  */
 #define LED_INIT ledInit(&DDRC, LED_BIT)
 #define BUTTON_INIT buttonInit(DDRD, BUTTON_BIT)
 
