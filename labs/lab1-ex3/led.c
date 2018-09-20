@@ -10,7 +10,7 @@ void led_on (void) {
 
 /** Turn LED1 off.  */
 void led_off (void) {
-    PORTC = BIT(0);
+    PORTC &= ~BIT(2);
 }
 
 

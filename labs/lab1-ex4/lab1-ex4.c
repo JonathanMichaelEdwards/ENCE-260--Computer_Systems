@@ -1,12 +1,14 @@
 #include <avr/io.h>
 #include "button.h"
 #include "led.h"
+#include "pio.h"
 
 #define DEBOUNCE_MAX 100
 #define LED_BIT 2
 #define BUTTON_BIT 7
+PIO_OUTPUT_LOW
 
-// Macros
+
 #define LED_INIT ledInit(&DDRC, LED_BIT)
 #define BUTTON_INIT buttonInit(DDRD, BUTTON_BIT);
 
