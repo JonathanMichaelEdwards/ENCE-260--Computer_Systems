@@ -1,9 +1,6 @@
 {
+    "C_Cpp.dimInactiveRegions": false,
     "files.associations": {
-        "system.h": "c",
-        "pio.h": "c",
-        "button.h": "c",
-        "string": "c"
-    },
-    "C_Cpp.dimInactiveRegions": false
+        "system.h": "c"
+    }
 }

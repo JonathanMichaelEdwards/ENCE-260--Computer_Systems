@@ -5,6 +5,7 @@
             "includePath": [
                 "/usr/local/Cellar/avr8-gnu-toolchain-darwin_x86_64/**",
                 "/usr/local/Cellar/avr8-gnu-toolchain-darwin_x86_64/avr/include/**",
+                "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/drivers/**",
                 "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/drivers/avr/**",
                 "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/drivers/test/**"
             ],

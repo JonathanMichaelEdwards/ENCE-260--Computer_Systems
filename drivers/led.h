@@ -35,10 +35,10 @@
 /** Set LED to desired state.
     @param led LED to select
     @param state desired state (non-zero for on).  */
-void led_set (uint8_t led, bool state);
+void led_set(uint8_t led, bool state);
 
 
 /** Initialise LED driver.  */
-void led_init (void);
+void led_init(void);
 
 #endif
