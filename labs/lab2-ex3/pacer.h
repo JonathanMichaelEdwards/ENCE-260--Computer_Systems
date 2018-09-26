@@ -2,6 +2,7 @@
 #define PACER_H
 
 #include "system.h"
+#include "pio.h"
 
 /* Initialise the pacer module.  */
 void pacer_init (uint16_t pacer_frequency);

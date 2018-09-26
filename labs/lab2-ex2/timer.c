@@ -3,7 +3,7 @@
 
 #define SEC_TO_MILL 1000
 #define TIMER_PRESCALE 1024  // 2^10
-#define DELAY_TICKS(DELAY) (DELAY * (F_CPU / TIMER_PRESCALE) / SEC_TO_MILL)
+#define DELAY_T(DELAY) (DELAY * (F_CPU / TIMER_PRESCALE) / SEC_TO_MILL)
 
 
 /* Initialise timer.  */
@@ -19,5 +19,5 @@ void timer_init(void)
 void timer_delay_ms(uint16_t milliseconds)
 {   
     TCNT1 = 0;
-    while (TCNT1 < DELAY_TICKS(milliseconds)) continue; 
+    while (TCNT1 < DELAY_T(milliseconds)) continue; 
 }
