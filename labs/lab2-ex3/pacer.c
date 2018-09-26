@@ -3,7 +3,7 @@
 
 #define SEC_TO_MILL 1000
 #define TIMER_PRESCALE 1024  // 2^10
-// #define DELAY_T(DELAY) (DELAY * (F_CPU / TIMER_PRESCALE) / SEC_TO_MILL)
+#define DELAY_T(FREQUENCY) (F_CPU / (FREQUENCY * TIMER_PRESCALE))
 
 
 static uint16_t pacer_period;
@@ -18,7 +18,7 @@ void pacer_init(uint16_t pacer_frequency)
     TCCR1B = 0x05; 
     TCCR1C = 0x00;
 
-    pacer_period = F_CPU / (pacer_frequency * TIMER_PRESCALE);
+    pacer_period = DELAY_T(pacer_frequency);
 }
 
 
