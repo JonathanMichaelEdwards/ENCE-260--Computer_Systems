@@ -36,6 +36,3 @@ void system_init (void)
     system_clock_init ();
     system_watchdog_timer_init ();
 }
-
-
-

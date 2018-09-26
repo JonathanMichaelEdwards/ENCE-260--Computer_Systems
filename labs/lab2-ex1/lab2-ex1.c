@@ -2,13 +2,14 @@
 #include "system.h"
 #include "led.h"
 #include "pio.h"
-#include <util/delay.h>
 
-#define delay(X) 
+#define SEC_TO_MILL 1000
+#define TIMER_PRESCALE 1024  // 2^10
+#define TIME_DELAY(DELAY) (DELAY * (F_CPU / TIMER_PRESCALE) / SEC_TO_MILL)
 
 int main (void)
 {
-    // system_init();
+    system_init();
     led_init();
     
     /* TODO: Initialise timer/counter1.  */
@@ -22,13 +23,13 @@ int main (void)
         led_set(LED1, 1);
         /* TODO: wait for 500 milliseconds.  */
         TCNT1 = 0;
-        while (TCNT1 < 3906) continue; 
+        while (TCNT1 < TIME_DELAY(500)) continue; 
 
         /* Turn LED off.  */
         led_set(LED1, 0);
         /* TODO: wait for 500 milliseconds.  */
         TCNT1 = 0;
-        while (TCNT1 < 3906) continue; 
+        while (TCNT1 < TIME_DELAY(500)) continue; 
     }
     
 }
