@@ -39,7 +39,7 @@ int main (void)
     ledmat_init();
 
     /* Set up pacer with a frequency of 50 Hz.  */
-    pacer_init(90);
+    pacer_init(50);
 
     while (1)
     {   

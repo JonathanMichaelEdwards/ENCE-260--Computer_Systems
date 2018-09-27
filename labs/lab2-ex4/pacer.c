@@ -18,7 +18,7 @@ void pacer_init (uint16_t pacer_frequency)
     TCCR1B = 0x05; 
     TCCR1C = 0x00;
 
-    pacer_period = DELAY_T((1 / (float)pacer_frequency) * SEC_TO_MILL);
+    pacer_period = DELAY_T((1 / pacer_frequency) * SEC_TO_MILL);
 }
 
 
@@ -29,5 +29,4 @@ void pacer_wait (void)
        lab2-except reset TCNT1 after the while loop. */
     while (TCNT1 < pacer_period) continue;
     TCNT1 = 0;
-
 }
