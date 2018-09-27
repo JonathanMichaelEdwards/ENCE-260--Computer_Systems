@@ -1,6 +1,10 @@
 #include <avr/io.h>
 #include "pacer.h"
 
+#define SEC_TO_MILL 1000
+#define TIMER_PRESCALE 1024  // 2^10
+#define DELAY_T(DELAY) (DELAY * (F_CPU / TIMER_PRESCALE) / SEC_TO_MILL)
+
 
 static uint16_t pacer_period;
 
@@ -14,7 +18,7 @@ void pacer_init (uint16_t pacer_frequency)
     TCCR1B = 0x05; 
     TCCR1C = 0x00;
 
-    pacer_period = pacer_frequency;
+    pacer_period = DELAY_T((1 / (float)pacer_frequency) * SEC_TO_MILL);
 }
 
 

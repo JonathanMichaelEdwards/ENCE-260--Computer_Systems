@@ -40,14 +40,14 @@ int main (void)
     uint8_t current_column = 0;
   
     system_init ();
-    pacer_init (500);
+    pacer_init(500);
     
     /* TODO: Initialise LED matrix pins.  */
     
 
     while (1)
     {
-        pacer_wait ();
+        pacer_wait();
         
         display_column (bitmap[current_column], current_column);
     

@@ -1,6 +1,6 @@
 #include "system.h"
 #include "led.h"
-// #include "pacer.h"
+#include "pacer.h"
 
 
 int main (void)
