@@ -43,6 +43,7 @@ int main (void)
 
     while (1)
     {   
+        
         /* State 1 Set high and low outputs */
         pio_output_high(LEDMAT_ROW1_PIO);
         pio_output_high(LEDMAT_COL5_PIO);
