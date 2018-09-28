@@ -18,7 +18,7 @@ void pacer_init(uint16_t pacer_frequency)
     TCCR1B = 0x05; 
     TCCR1C = 0x00;
 
-    pacer_period = DELAY_T((1 / (float)pacer_frequency) * SEC_TO_MILL);
+    pacer_period = DELAY_T(SEC_TO_MILL / pacer_frequency);
 }
 
 
