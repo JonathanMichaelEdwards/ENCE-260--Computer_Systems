@@ -38,8 +38,8 @@ int main (void)
     /* TODO: Initialise the pins of the LED matrix.  */
     ledmat_init();
 
-    /* Set up pacer with a frequency of 50 Hz.  */
-    pacer_init(50);
+    /* Set up pacer with a frequency of 90 Hz.  */
+    pacer_init(90);
 
     while (1)
     {   
@@ -51,7 +51,7 @@ int main (void)
         pio_output_low(LEDMAT_ROW7_PIO);
         pio_output_low(LEDMAT_COL1_PIO); 
        
-        // Wait for 50 Hz
+        // Wait for 90 Hz
         pacer_wait();
 
         /* State 2, Set high and low outputs */
@@ -59,7 +59,7 @@ int main (void)
         pio_output_low(LEDMAT_ROW1_PIO); 
         pio_output_low(LEDMAT_COL5_PIO); 
 
-        // Wait for 50 Hz
+        // Wait for 90 Hz
         pacer_wait();
     }
 }
