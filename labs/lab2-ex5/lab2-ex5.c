@@ -26,36 +26,47 @@ static const uint8_t bitmap[] =
 };
 
 
+static void ledmat_init(void) {
+    for (uint8_t row = 0; row < 7; row++) {
+        pio_config_set(rows[row], PIO_OUTPUT_HIGH);
+    }
 
-static void display_column (uint8_t row_pattern, uint8_t current_column)
+    for (uint8_t col = 0; col < 5; col++) {
+        pio_config_set(cols[col], PIO_OUTPUT_HIGH);
+    }
+}
+
+
+static void display_column(uint8_t row_pattern, uint8_t current_column)
 {
-
-    /* TODO */
-
+    if ((row_pattern >> current_column)) {
+        pio_output_low(rows[current_column]);
+    } else {
+        pio_output_high(rows[current_column]);
+    }
 }
 
 
 int main (void)
 {
     uint8_t current_column = 0;
-  
-    system_init ();
+    
+    system_init();
     pacer_init(500);
     
     /* TODO: Initialise LED matrix pins.  */
-    
+    ledmat_init();
 
-    while (1)
-    {
+    while (1) {
+        
         pacer_wait();
         
-        display_column (bitmap[current_column], current_column);
-    
-        current_column++;
-    
-        if (current_column > (LEDMAT_COLS_NUM - 1))
-        {
-            current_column = 0;
-        }           
+        display_column(bitmap[current_column], current_column);
+        
+        current_column++;  
+
+        // if (current_column > (LEDMAT_COLS_NUM - 1)) {
+        //     current_column = 0;
+        // }        
     }
 }
