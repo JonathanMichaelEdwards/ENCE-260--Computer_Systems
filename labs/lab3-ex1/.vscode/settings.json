@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "tinygl.h": "c",
+        "font5x7_1.h": "c",
+        "system.h": "c",
+        "pacer.h": "c"
+    }
+}
