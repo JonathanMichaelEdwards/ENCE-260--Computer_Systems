@@ -1,3 +1,4 @@
+#include <avr/io.h>
 #include "system.h"
 #include "pacer.h"
 #include "navswitch.h"
@@ -15,7 +16,7 @@ void display_character (char character)
     char buffer[2];
     buffer[0] = character;
     buffer[1] = '\0';
-    tinygl_text (buffer);
+    tinygl_text(buffer);
 }
 
 
@@ -32,7 +33,7 @@ int main (void)
     /* TODO: Initialise IR driver.  */
 
 
-    pacer_init (PACER_RATE);
+    pacer_init(PACER_RATE);
 
     while (1)
     {
