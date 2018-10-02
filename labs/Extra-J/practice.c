@@ -1,6 +1,7 @@
 #include "system.h"
 #include "led.h"
 #include "pacer.h"
+#include "pract.h"
 
 
 int main (void)
@@ -15,6 +16,7 @@ int main (void)
     
     while(1)
     {
+        one();
         /* Pace the loop.  */
         pacer_wait();
         

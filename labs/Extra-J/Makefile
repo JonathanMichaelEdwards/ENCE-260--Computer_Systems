@@ -31,10 +31,13 @@ led.o: ../../drivers/led.c ../../drivers/led.h
 pacer.o: pacer.c pacer.h
 	$(CC) -c $(CFLAGS) $< -o $@
 
+pract.o: pract.c pract.h
+	$(CC) -c $(CFLAGS) $< -o $@
+
 
 
 # Link: create ELF output file from object files.
-practice.out: practice.o pio.o system.o led.o pacer.o
+practice.out: practice.o pio.o system.o led.o pacer.o pract.o
 	$(CC) $(CFLAGS) $^ -o $@ -lm
 	$(SIZE) $@
 

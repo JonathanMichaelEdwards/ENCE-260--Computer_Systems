@@ -3,6 +3,7 @@
         "system.h": "c",
         "pacer.h": "c",
         "led.h": "c",
-        "string": "c"
+        "string": "c",
+        "pract.h": "c"
     }
 }
