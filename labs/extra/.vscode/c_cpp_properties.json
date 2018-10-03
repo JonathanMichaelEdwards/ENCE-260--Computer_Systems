@@ -1,9 +1,13 @@
 {
     "configurations": [
         {
-            "name": "linux",
+            "name": "Mac",
             "includePath": [
-               "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/utils",
+                "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/drivers/test",
+                "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/drivers/avr",
+                "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/drivers",
+                "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/fonts",
+                "/Users/jonathanedwards/Desktop/C & C++/ENCE-260/Embedded Systems/Labs/ENCE260-ucfk4/utils",
                 "/usr/local/Cellar/avr8-gnu-toolchain-darwin_x86_64/avr/include",
                 "/home/cosc/student/jme161/Desktop/ENCE260-ucfk4/drivers/avr/test",
                 "/home/cosc/student/jme161/Desktop/ENCE260-ucfk4/drivers/avr",
@@ -13,7 +17,7 @@
                 "/usr/lib/avr/include"
             ],
             "defines": [
-                "__AVR_ATmega32U2__"
+                "__AVR_ATmega328P__"
             ],
             "macFrameworkPath": [
                 "/System/Library/Frameworks",

@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "ir_uart.h": "c"
-    }
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
