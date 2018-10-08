@@ -31,6 +31,7 @@ int main (void)
     navswitch_init();
 
     /* TODO: Initialise IR driver.  */
+    ir_uart_init();
 
 
     pacer_init(PACER_RATE);
@@ -49,10 +50,14 @@ int main (void)
            event.  */
 
         if (navswitch_push_event_p(NAVSWITCH_PUSH)) {
-            ir_uart_putc(character);
+            ir_uart_putc(character);  
         }
         
-        display_character(character);
+        // if (ir_uart_read_ready_p()) {
+        //     // character = ir_uart_getc();
+        //     display_character(character);
+        // } 
+        
         
     }
 
