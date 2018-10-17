@@ -1,0 +1,40 @@
+**--------------------------------------------**
+**-  CALL OF DUTY -- MICROPROCESSOR EDITION  -**
+**-     BY JONATHAN EDWARDS & BEN EMPSON     -**
+**--------------------------------------------**
+
+INTRODUCTION
+------------
+
+Welcome to Call of Duty -- Microprocessor Edition, the first person shooter everybody loves-
+Now with less gameplay, less memory space, less first person, but for the first time ever- 7x5 graphics!!!
+This will be an experience you will never forget, featuring: a single gun, super difficult controls,
+and a lot of moving lights that has no chance whatsoever (probably) to leave you blind!
+
+
+CONTROLS
+---------
+
+(JOYSTICK)
+UP = Move Up
+DOWN = Move Down
+LEFT = Move Left
+RIGHT = Move Right
+PRESS = Shoot
+
+(OTHER)
+SWITCH = Start
+
+
+INSTRUCTIONS
+------------
+
+The aim of the game is to find your opponent an destory them using bullets.
+The solid light in the middle of the screen is you- protect yourself at all cost!
+The other solid light's are walls- navigate the map by moving around these blockades.
+The periodicly flashing light you may find is your enemy (the other player)- fire at will!
+Shooting will fire in the direction you last moved in (or attempted to move in)- bullets will stop at walls.
+You have 3 HP (hit points)- if you get hit by an enemy bullet you lose a HP.
+You will begin flashing to alert your loss of HP- lose all your HP and game over.
+Your enemy also has 3 HP - take them down by shooting bullets to hit your opponent.
+The blue LED will turn on to indicate a successful strike. Drop their HP to 0 and you win!

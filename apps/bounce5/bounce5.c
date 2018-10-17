@@ -9,6 +9,7 @@
 #include "pacer.h"
 #include "tinygl.h"
 #include "boing.h"
+#include "clock.h"
 
 
 /* Define polling rate in Hz.  */
