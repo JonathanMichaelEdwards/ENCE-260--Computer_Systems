@@ -21,15 +21,15 @@ int main (void)
     {
         /* Turn LED on.  */
         led_set(LED1, 1);
-        /* TODO: wait for 500 milliseconds.  */
+        /* TODO: wait for 1 milliseconds.  */
         TCNT1 = 0;
-        while (TCNT1 < TIME_DELAY(500)) continue; 
+        while (TCNT1 < TIME_DELAY(1)) continue; 
 
         /* Turn LED off.  */
         led_set(LED1, 0);
-        /* TODO: wait for 500 milliseconds.  */
+        /* TODO: wait for 9 milliseconds.  */
         TCNT1 = 0;
-        while (TCNT1 < TIME_DELAY(500)) continue; 
+        while (TCNT1 < TIME_DELAY(9)) continue; 
     }
     
 }
